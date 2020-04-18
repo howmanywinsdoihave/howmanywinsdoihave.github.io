@@ -2,6 +2,17 @@
 <html>
 <body>
     <script src="game.js"></script>
-    <div id=statsPage>loading...</div>
+
+        <label for="playersName">Put in your epic name and platform to see your number of wins in Fortnite!</label><br>
+        <input type = "text"
+               id = "playersName"/>
+    <p>
+<input type="radio" name="platformId" value="pc">PC 
+    <input type="radio" name="platformId" value="xbl">Xbox One 
+    <input type="radio" name="platformId" value="psn">PS4 
+    </p>
+        <button type="button" onclick="getNoOfWins();">Submit</button>
+
+    <div id=statsPage></div>
     </body>
 </html>
